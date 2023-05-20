@@ -1,0 +1,167 @@
+:root {
+  overflow-x: hidden;
+
+  /* color */
+  --blackColor: black;
+  --whiteColor: white;
+  --lightWhiteColor: rgb(220, 220, 220);
+  --blackShadow: rgb(0, 0, 0, 0.4) 0px 0px 20px;
+
+  /* font family */
+
+  --poppinsFont: "Poppins", sans-serif;
+  --montserratFont: "Montserrat", sans-serif;
+  --newEleganceCondltaFont: "NewEleganceCondltaFont";
+  --newEleganceCondensed: "NewEleganceCondensedFont";
+  --demoRegularFont: "DemoRegularFont";
+
+  /* font size */
+
+  --logoFontSize: calc(0.9rem + 1vw);
+  --navbarFontSize: calc(0.5rem + 1vw);
+}
+
+/* navbar ------------------------------------------------------------------- */
+
+nav {
+  padding-left: 12%;
+}
+
+.logo {
+  width: 35%;
+}
+
+.logo img {
+  transform: scale(200%);
+}
+
+/* burger menu */
+
+.burger {
+  transform: scale(100%);
+}
+
+.menu-navbar li {
+  padding: 2.5rem 7rem 2.5rem 4.5rem;
+}
+
+.menu-navbar li a {
+  font-size: calc(1rem + 0.5vw);
+}
+
+.navbar-open {
+  transform: translate(-90%);
+}
+
+/* home sections ---------------------------------------------  */
+
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: calc(6rem + 1vw);
+  padding: 5% 50%;
+  letter-spacing: 0.4rem;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 850px;
+}
+
+.cta-home2 {
+  padding-right: 1.5rem;
+}
+
+.cta-home1,
+.cta-home2,
+.cta-home3 {
+  font-size: calc(2.5rem + 1vw);
+}
+
+.sub-title {
+  flex-direction: column;
+}
+
+/* about sections ---------------------------------------------  */
+
+#about {
+  min-height: 40vh;
+}
+
+.quotes1 p,
+.quotes2 p,
+.quotes3 p {
+  font-size: calc(0.4rem + 1vw);
+  text-align: center;
+}
+
+.cta1,
+.cta2,
+.cta3 {
+  font-size: calc(0.5rem + 1vw);
+  text-align: center;
+}
+
+/* kategori sections ---------------------------------------------  */
+
+#kategori {
+  min-height: 80vh;
+}
+
+.kategori-container {
+  padding: 5% 0 0 0;
+}
+
+.cta1-title1,
+.cta2-title2 {
+  font-size: calc(3rem + 1vw);
+}
+
+.sub-title1 {
+  font-size: calc(0.5rem + 1vw);
+}
+
+.galery-kategori {
+  height: 50vh;
+  padding: 0 2rem;
+}
+
+.description1 h1,
+.description2 h1,
+.description3 h1 {
+  font-size: calc(0.6rem + 1vw);
+}
+
+/* penutup sections ---------------------------------------------  */
+
+.penutup-container {
+  padding: 15% 0;
+}
+
+.title-penutup h2 {
+  font-size: calc(3.5rem + 0.5vw);
+}
+
+.sub-penutup {
+  font-size: calc(0.6rem + 0.5vw);
+}
+
+.youtube,
+.instagram {
+  width: 60vw;
+  height: 7vh;
+}
+
+.youtube img,
+.instagram img {
+  width: calc(20% + 0.5vw);
+  height: calc(70% + 0.5vw);
+}
+
+.youtube p,
+.instagram p {
+  height: 30%;
+  font-size: calc(0.9rem + 1vw);
+  padding-left: 3rem;
+}

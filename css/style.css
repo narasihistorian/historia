@@ -1,0 +1,461 @@
+/* font */
+
+@font-face {
+  font-family: "NewEleganceCondltaFont";
+  src: url("/font/TheNewElegance-CondIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NewEleganceCondensedFont";
+  src: url("/font/TheNewElegance-Condensed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DemoRegularFont";
+  src: url("/font/Demo-Regular.otf") format("opentype");
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  /* color */
+  --blackColor: black;
+  --whiteColor: white;
+  --lightWhiteColor: rgb(220, 220, 220);
+  --blackShadow: rgb(0, 0, 0, 0.4) 0px 0px 20px;
+
+  /* font family */
+
+  --poppinsFont: "Poppins", sans-serif;
+  --montserratFont: "Montserrat", sans-serif;
+  --newEleganceCondltaFont: "NewEleganceCondltaFont";
+  --newEleganceCondensed: "NewEleganceCondensedFont";
+  --demoRegularFont: "DemoRegularFont";
+
+  /* font size */
+
+  --logoFontSize: calc(0.9rem + 1vw);
+  --navbarFontSize: calc(0.5rem + 1vw);
+}
+
+/* default setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 20;
+}
+
+.logo {
+  display: block;
+  position: relative;
+  width: 15%;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  transform: scale(150%);
+}
+
+.menu-navbar {
+  list-style-type: none;
+}
+
+.menu-navbar li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-family: var(--montserratFont);
+  letter-spacing: 0.1rem;
+}
+
+.menu-navbar li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: var(--navbarFontSize);
+  font-weight: bold;
+}
+
+.menu-navbar li a:hover {
+  color: rgb(225, 225, 72);
+}
+
+.burger {
+  display: none;
+}
+
+/* home sections ---------------------------------------------  */
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg\ narasihistorian.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5% 50%;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 850px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.cta-home2 {
+  padding-right: 1.5rem;
+}
+
+.cta-home3 {
+  color: #fedf16e0;
+}
+
+.sub-title {
+  display: flex;
+}
+
+.cta-home1,
+.cta-home2,
+.cta-home3 {
+  display: block;
+  font-family: "NewEleganceCondltaFont";
+  font-size: calc(5rem + 1vw);
+  letter-spacing: 1rem;
+}
+
+/* button component */
+
+.cta-button {
+  background: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: var(--blackColor);
+  cursor: pointer;
+  font-family: var(--montserratFont);
+  transition: background 0.75s ease-out;
+  border-style: solid;
+  border-color: #ffd92b;
+  margin-top: 5%;
+}
+
+.cta-button a {
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-size: calc(0.6rem + 0.5vw);
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+}
+
+.cta-button a:hover {
+  background: none;
+  color: #ffd92b;
+}
+
+/* about sections ---------------------------------------------  */
+
+#about {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.about-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+}
+
+.quotes-quotes,
+.about-picture {
+  flex: 1;
+}
+
+.quotes-quotes {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
+
+.quotes1,
+.quotes2,
+.quotes3 {
+  width: 100vh;
+  padding: 5%;
+}
+
+.quotes1 p,
+.quotes2 p,
+.quotes3 p {
+  height: 50%;
+  margin-bottom: 2.5rem;
+  font-family: var(--poppinsFont);
+  font-size: calc(0.2rem + 1vw);
+}
+
+.cta1,
+.cta2,
+.cta3 {
+  font-family: "DemoRegularFont";
+  font-size: calc(0.8rem + 1vw);
+}
+
+.about-picture {
+  position: relative;
+  height: 100%;
+}
+
+.about-picture img {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+/* kategori sections ---------------------------------------------  */
+
+#kategori {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.kategori-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5% 0 0 0;
+}
+
+.title1 {
+  display: flex;
+  justify-content: center;
+}
+
+.cta1-title1,
+.cta2-title2 {
+  display: block;
+  padding: 0 0.5rem;
+  font-family: var(--newEleganceCondensed);
+  letter-spacing: 0.7rem;
+  text-shadow: rgba(205, 177, 177, 0.4) 0px 0px 20px;
+  font-size: calc(2.5rem + 1vw);
+}
+
+.sub-title1 {
+  display: flex;
+  justify-content: center;
+  font-family: var(--montserratFont);
+  letter-spacing: 0.4rem;
+  padding: 2rem 0 5rem 0;
+  font-size: calc(0.2rem + 1vw);
+}
+
+.galery-kategori {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem;
+  width: 100vw;
+  height: 60vh;
+}
+
+.kategori {
+  flex: 1;
+  position: relative;
+  width: 100%;
+}
+
+.kategori img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(1);
+  object-fit: cover;
+  padding: 0 5% 0 0;
+}
+
+.description1,
+.description2,
+.description3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(2px);
+  overflow: hidden;
+  width: 0;
+  height: 100%;
+  transition: 0.5s ease;
+}
+
+.kategori:hover .description1 {
+  width: 95%;
+}
+
+.kategori:hover .description2 {
+  width: 95%;
+}
+
+.kategori:hover .description3 {
+  width: 95%;
+}
+
+.description1 h1,
+.description2 h1,
+.description3 h1 {
+  position: absolute;
+  color: white;
+  font-size: calc(1.8rem + 1vw);
+  font-family: var(--newEleganceCondltaFont);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+}
+
+/* penutup sections ---------------------------------------------  */
+
+#penutup {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg\ home.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.penutup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 5% 0;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(2px);
+}
+
+.title-penutup {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.title-penutup h2 {
+  font-size: calc(8rem + 0.5vw);
+  font-family: var(--newEleganceCondltaFont);
+  letter-spacing: 1rem;
+  color: #ffffff;
+}
+
+.cta1-penutup1 {
+  margin-right: 2rem;
+}
+
+.sub-penutup {
+  font-size: calc(0.7rem + 0.5vw);
+  font-family: var(--montserratFont);
+  letter-spacing: 0.1rem;
+  color: var(--whiteColor);
+}
+
+.social-media {
+  position: relative;
+}
+
+.youtube,
+.instagram {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  margin: 5.7rem 1rem;
+  cursor: pointer;
+  width: 25vw;
+  height: 10vh;
+  border-radius: 15px;
+  border: 3px solid #fedf16e0;
+}
+
+.youtube img,
+.instagram img {
+  width: calc(50% + 0.5vw);
+  height: calc(100% + 0.5vw);
+  object-fit: contain;
+  padding: 0.8rem;
+}
+
+.youtube p,
+.instagram p {
+  width: 100%;
+  height: 50%;
+  color: var(--whiteColor);
+  font-size: calc(0.9rem + 1vw);
+}
+
+/* footer ---------------------------------------------  */
+
+.footer {
+  position: fixed;
+  width: 100vw;
+  min-height: 10vh;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 5;
+  bottom: 0;
+}
+
+.footer-container {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.footer svg {
+  width: 3%;
+  height: 3%;
+  fill: var(--blackColor);
+}
+
+.footer p {
+  font-size: calc(0.8rem + 0.5vw);
+  color: var(--whiteColor);
+}

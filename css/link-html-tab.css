@@ -1,0 +1,124 @@
+/* font */
+
+@font-face {
+  font-family: "NewEleganceCondltaFont";
+  src: url("/font/TheNewElegance-CondIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NewEleganceCondensedFont";
+  src: url("/font/TheNewElegance-Condensed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DemoRegularFont";
+  src: url("/font/Demo-Regular.otf") format("opentype");
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  /* color */
+  --blackColor: black;
+  --whiteColor: white;
+  --lightWhiteColor: rgb(220, 220, 220);
+  --blackShadow: rgb(0, 0, 0, 0.4) 0px 0px 20px;
+
+  /* font family */
+
+  --poppinsFont: "Poppins", sans-serif;
+  --montserratFont: "Montserrat", sans-serif;
+  --newEleganceCondltaFont: "NewEleganceCondltaFont";
+  --newEleganceCondensed: "NewEleganceCondensedFont";
+  --demoRegularFont: "DemoRegularFont";
+
+  /* font size */
+
+  --logoFontSize: calc(0.9rem + 1vw);
+  --navbarFontSize: calc(0.5rem + 1vw);
+}
+
+/* default setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+  padding-left: 12%;
+}
+
+.logo-hyperlink {
+  width: 25%;
+}
+
+.logo-hyperlink img {
+  transform: scale(200%);
+}
+
+/* burger menu */
+
+.burger-hyperlink {
+  position: relative;
+  display: block;
+  transform: scale(150%);
+}
+
+.burger-hyperlink span {
+  padding: 0.1rem 1rem;
+  background: rgb(255, 255, 255);
+  margin: 0.3rem 0rem;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.menu-navbar-hyperlink {
+  position: fixed;
+  width: 40vw;
+  height: 60vh;
+  background: rgba(128, 108, 18, 0.629);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.menu-navbar-hyperlink li {
+  padding: 2.5rem 7rem 2.5rem 2.5rem;
+}
+
+.menu-navbar-hyperlink li a {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.navbar-open {
+  transform: translate(-80%);
+}
+
+.toggle .line1 {
+  transform: rotateZ(35deg) translateY(300%);
+  background: white;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotateZ(-35deg) translateY(-300%);
+  background: white;
+}

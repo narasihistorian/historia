@@ -1,0 +1,147 @@
+/* font */
+
+@font-face {
+  font-family: "NewEleganceCondltaFont";
+  src: url("/font/TheNewElegance-CondIta.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "NewEleganceCondensedFont";
+  src: url("/font/TheNewElegance-Condensed.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "DemoRegularFont";
+  src: url("/font/Demo-Regular.otf") format("opentype");
+}
+
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  /* color */
+  --blackColor: black;
+  --whiteColor: white;
+  --lightWhiteColor: rgb(220, 220, 220);
+  --blackShadow: rgb(0, 0, 0, 0.4) 0px 0px 20px;
+
+  /* font family */
+
+  --poppinsFont: "Poppins", sans-serif;
+  --montserratFont: "Montserrat", sans-serif;
+  --newEleganceCondltaFont: "NewEleganceCondltaFont";
+  --newEleganceCondensed: "NewEleganceCondensedFont";
+  --demoRegularFont: "DemoRegularFont";
+
+  /* font size */
+
+  --logoFontSize: calc(0.9rem + 1vw);
+  --navbarFontSize: calc(0.5rem + 1vw);
+}
+
+/* default setting */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* navbar */
+
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10%;
+  padding-left: 10%;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 20;
+}
+
+.logo-hyperlink {
+  display: block;
+  position: relative;
+  width: 15%;
+}
+
+.logo-hyperlink img {
+  width: 100%;
+  height: 100%;
+  transform: scale(150%);
+}
+
+.menu-navbar-hyperlink {
+  list-style-type: none;
+}
+
+.menu-navbar-hyperlink li {
+  display: inline-block;
+  padding: 0 1rem;
+  font-family: var(--montserratFont);
+  letter-spacing: 0.1rem;
+}
+
+.menu-navbar-hyperlink li a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-size: var(--navbarFontSize);
+  font-weight: bold;
+}
+
+.menu-navbar-hyperlink li a:hover {
+  color: rgb(225, 225, 72);
+}
+
+.burger-hyperlink {
+  display: none;
+}
+
+/* title section */
+
+#galery {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/book\ background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#galery-kategori {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/book\ 2\ background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.galery-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(1px);
+}
+
+.title-gallery {
+  font-family: var(--newEleganceCondltaFont);
+  font-size: calc(5rem + 1vw);
+  letter-spacing: 1.5rem;
+  color: var(--whiteColor);
+}

@@ -1,0 +1,211 @@
+:root {
+  overflow-x: hidden;
+
+  /* color */
+  --blackColor: black;
+  --whiteColor: white;
+  --lightWhiteColor: rgb(220, 220, 220);
+  --blackShadow: rgb(0, 0, 0, 0.4) 0px 0px 20px;
+
+  /* font family */
+
+  --poppinsFont: "Poppins", sans-serif;
+  --montserratFont: "Montserrat", sans-serif;
+  --newEleganceCondltaFont: "NewEleganceCondltaFont";
+  --newEleganceCondensed: "NewEleganceCondensedFont";
+  --demoRegularFont: "DemoRegularFont";
+
+  /* font size */
+
+  --logoFontSize: calc(0.9rem + 1vw);
+  --navbarFontSize: calc(0.5rem + 1vw);
+}
+
+/* navbar ------------------------------------------------------------------- */
+
+nav {
+  padding-left: 12%;
+}
+
+.logo {
+  width: 25%;
+}
+
+.logo img {
+  transform: scale(200%);
+}
+
+/* burger menu */
+
+.burger {
+  position: relative;
+  display: block;
+  transform: scale(150%);
+}
+
+.burger span {
+  padding: 0.1rem 1rem;
+  background: rgb(255, 255, 255);
+  margin: 0.3rem 0rem;
+  display: block;
+  transition: all 0.5s ease;
+}
+
+.menu-navbar {
+  position: fixed;
+  width: 40vw;
+  height: 60vh;
+  background: rgba(128, 108, 18, 0.629);
+  backdrop-filter: blur(5px);
+  top: 0;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s ease;
+  border: 5px solid rgb(255, 255, 255);
+}
+
+.menu-navbar li {
+  padding: 2.5rem 7rem 2.5rem 2.5rem;
+}
+
+.menu-navbar li a {
+  font-size: calc(1.5rem + 1vw);
+}
+
+.navbar-open {
+  transform: translate(-80%);
+}
+
+.toggle .line1 {
+  transform: rotateZ(35deg) translateY(300%);
+  background: white;
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotateZ(-35deg) translateY(-300%);
+  background: white;
+}
+
+/* home sections ---------------------------------------------  */
+
+#home {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg\ narasihistorian.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 5% 50%;
+  background: rgba(30, 24, 24, 0.1);
+  backdrop-filter: blur(0.1rem);
+  border-radius: 850px;
+}
+
+.title {
+  color: rgb(255, 255, 255);
+}
+
+.cta-home2 {
+  padding-right: 1.5rem;
+}
+
+.cta-home3 {
+  color: #fedf16e0;
+}
+
+.sub-title {
+  display: flex;
+}
+
+.cta-home1,
+.cta-home2,
+.cta-home3 {
+  display: block;
+  font-family: "NewEleganceCondltaFont";
+  font-size: calc(5rem + 1vw);
+  letter-spacing: 1rem;
+}
+
+/* about sections ---------------------------------------------  */
+
+#about {
+  min-height: 60vh;
+}
+
+.quotes1 p,
+.quotes2 p,
+.quotes3 p {
+  font-size: calc(0.6rem + 1vw);
+}
+
+/* kategori sections ---------------------------------------------  */
+
+#kategori {
+  min-height: 80vh;
+}
+
+.kategori-container {
+  padding: 0 0 0 0;
+}
+
+.cta1-title1,
+.cta2-title2 {
+  font-size: calc(3.5rem + 1vw);
+}
+
+.sub-title1 {
+  font-size: calc(0.5rem + 1vw);
+}
+
+.galery-kategori {
+  height: 50vh;
+}
+
+.description1 h1,
+.description2 h1,
+.description3 h1 {
+  font-size: calc(1.1rem + 1vw);
+}
+
+/* penutup sections ---------------------------------------------  */
+
+.title-penutup h2 {
+  font-size: calc(8rem + 0.5vw);
+}
+
+.sub-penutup {
+  font-size: calc(1.1rem + 0.5vw);
+}
+
+.youtube,
+.instagram {
+  width: 40vw;
+}
+
+.youtube img,
+.instagram img {
+  width: calc(30% + 0.5vw);
+  height: calc(80% + 0.5vw);
+}
+
+.youtube p,
+.instagram p {
+  height: 30%;
+  font-size: calc(0.9rem + 1vw);
+  padding-left: 3rem;
+}
