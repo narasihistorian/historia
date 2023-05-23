@@ -107,24 +107,18 @@ nav {
 
 /* title section */
 
-#galery {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(/img/book\ background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 #galery-kategori {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(/img/book\ 2\ background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+}
+
+#galery-kategori img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .galery-container {

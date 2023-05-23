@@ -99,10 +99,6 @@ nav {
   position: relative;
   width: 100vw;
   height: 100vh;
-  background-image: url(/img/bg\ narasihistorian.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .home-container {
@@ -194,18 +190,6 @@ nav {
 
 .youtube,
 .instagram {
-  width: 40vw;
-}
-
-.youtube img,
-.instagram img {
-  width: calc(30% + 0.5vw);
-  height: calc(80% + 0.5vw);
-}
-
-.youtube p,
-.instagram p {
-  height: 30%;
-  font-size: calc(0.9rem + 1vw);
-  padding-left: 3rem;
+  width: 50%;
+  height: 15%;
 }

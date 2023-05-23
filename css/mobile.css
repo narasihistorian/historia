@@ -147,21 +147,11 @@ nav {
   font-size: calc(0.6rem + 0.5vw);
 }
 
+.social-media {
+  width: 70vw;
+}
+
 .youtube,
 .instagram {
-  width: 60vw;
-  height: 7vh;
-}
-
-.youtube img,
-.instagram img {
-  width: calc(20% + 0.5vw);
-  height: calc(70% + 0.5vw);
-}
-
-.youtube p,
-.instagram p {
-  height: 30%;
-  font-size: calc(0.9rem + 1vw);
-  padding-left: 3rem;
+  height: 15%;
 }
