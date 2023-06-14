@@ -60,8 +60,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 10%;
-  padding-left: 10%;
+  padding: 0 10%;
   background: rgba(30, 24, 24, 0.1);
   backdrop-filter: blur(10px);
   z-index: 20;
@@ -71,12 +70,22 @@ nav {
   display: block;
   position: relative;
   width: 15%;
+  height: 70%;
 }
 
 .logo img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   transform: scale(150%);
+}
+
+.menu-navbar-socmed-icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 40%;
+  padding: 0 3rem;
 }
 
 .menu-navbar {
@@ -101,6 +110,29 @@ nav {
   color: rgb(225, 225, 72);
 }
 
+.socmed-icon {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  width: 20%;
+}
+
+.youtube-icon,
+.youtube-icon-color {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  fill: var(--whiteColor);
+}
+
+.instagram-icon,
+.instagram-icon-color {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  fill: var(--whiteColor);
+}
+
 .burger {
   display: none;
 }
@@ -111,6 +143,7 @@ nav {
   position: relative;
   width: 100vw;
   height: 100vh;
+  background: var(--whiteColor);
 }
 
 #home img {
@@ -153,7 +186,7 @@ nav {
 .cta-home3 {
   display: block;
   font-family: "NewEleganceCondltaFont";
-  font-size: calc(5rem + 1vw);
+  font-size: calc(6rem + 1vw);
   letter-spacing: 1rem;
 }
 
@@ -175,7 +208,7 @@ nav {
 .cta-button a {
   color: var(--whiteColor);
   text-decoration: none;
-  font-size: calc(0.6rem + 0.5vw);
+  font-size: calc(0.6rem + 1vw);
   font-weight: bold;
   letter-spacing: 0.2rem;
 }
@@ -191,6 +224,7 @@ nav {
   position: relative;
   width: 100vw;
   min-height: 100vh;
+  background: var(--whiteColor);
 }
 
 .about-container {
@@ -210,6 +244,7 @@ nav {
   display: flex;
   width: 100%;
   flex: 1;
+  padding: 0 5%;
 }
 
 .quotes1,
@@ -253,6 +288,7 @@ nav {
   position: relative;
   width: 100vw;
   min-height: 100vh;
+  background: var(--whiteColor);
 }
 
 .kategori-container {
@@ -274,7 +310,7 @@ nav {
   font-family: var(--newEleganceCondensed);
   letter-spacing: 0.7rem;
   text-shadow: rgba(205, 177, 177, 0.4) 0px 0px 20px;
-  font-size: calc(2.5rem + 1vw);
+  font-size: calc(4rem + 1vw);
 }
 
 .sub-title1 {
@@ -283,7 +319,7 @@ nav {
   font-family: var(--montserratFont);
   letter-spacing: 0.4rem;
   padding: 2rem 0 5rem 0;
-  font-size: calc(0.2rem + 1vw);
+  font-size: calc(0.5rem + 1vw);
 }
 
 .galery-kategori {
@@ -291,8 +327,8 @@ nav {
   display: flex;
   justify-content: center;
   padding: 0 5rem;
-  width: 100vw;
-  height: 60vh;
+  width: 100%;
+  height: 60%;
 }
 
 .kategori {
@@ -305,7 +341,6 @@ nav {
   display: block;
   width: 100%;
   height: 100%;
-  transform: scale(1);
   object-fit: cover;
   padding: 0 5% 0 0;
 }
@@ -375,10 +410,10 @@ nav {
 }
 
 .penutup-container {
+  position: absolute;
   display: flex;
   flex-direction: column;
   align-items: center;
-  position: absolute;
   width: 100%;
   height: 100%;
   padding: 5% 0;
@@ -392,7 +427,7 @@ nav {
 }
 
 .title-penutup h2 {
-  font-size: calc(8rem + 0.5vw);
+  font-size: calc(10rem + 0.5vw);
   font-family: var(--newEleganceCondltaFont);
   letter-spacing: 1rem;
   color: #ffffff;
@@ -403,39 +438,10 @@ nav {
 }
 
 .sub-penutup {
-  font-size: calc(0.7rem + 0.5vw);
+  font-size: calc(0.6rem + 1vw);
   font-family: var(--montserratFont);
   letter-spacing: 0.1rem;
   color: var(--whiteColor);
-}
-
-.social-media {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 50vw;
-  height: 50vh;
-}
-
-.youtube,
-.instagram {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5.7rem 1rem;
-  cursor: pointer;
-  width: 30%;
-  height: 20%;
-}
-
-.youtube img,
-.instagram img {
-  width: calc(100% + 0.5vw);
-  height: calc(100% + 0.5vw);
-  border: 3px solid rgb(255, 255, 255);
-  border-radius: 35px;
-  object-fit: contain;
-  padding: 0.8rem;
 }
 
 /* footer ---------------------------------------------  */

@@ -24,15 +24,11 @@
 /* navbar ------------------------------------------------------------------- */
 
 nav {
-  padding-left: 12%;
+  padding: 0 10%;
 }
 
 .logo {
-  width: 25%;
-}
-
-.logo img {
-  transform: scale(200%);
+  width: 35%;
 }
 
 /* burger menu */
@@ -53,30 +49,29 @@ nav {
 
 .menu-navbar {
   position: fixed;
-  width: 40vw;
-  height: 60vh;
-  background: rgba(128, 108, 18, 0.629);
+  width: 100vw;
+  height: 100vh;
+  background: rgba(5, 5, 5, 0.629);
   backdrop-filter: blur(5px);
-  top: 0;
-  left: 100%;
+  left: 0;
+  bottom: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   transition: transform 1s ease;
-  border: 5px solid rgb(255, 255, 255);
 }
 
 .menu-navbar li {
-  padding: 2.5rem 7rem 2.5rem 2.5rem;
+  padding: 2.5rem 4rem;
 }
 
 .menu-navbar li a {
-  font-size: calc(1.5rem + 1vw);
+  font-size: calc(6rem + 1vw);
 }
 
 .navbar-open {
-  transform: translate(-80%);
+  transform: translateY(100%);
 }
 
 .toggle .line1 {
@@ -93,54 +88,26 @@ nav {
   background: white;
 }
 
+.socmed-icon {
+  display: none;
+}
+
 /* home sections ---------------------------------------------  */
-
-#home {
-  position: relative;
-  width: 100vw;
-  height: 100vh;
-}
-
-.home-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 5% 50%;
-  background: rgba(30, 24, 24, 0.1);
-  backdrop-filter: blur(0.1rem);
-  border-radius: 850px;
-}
-
-.title {
-  color: rgb(255, 255, 255);
-}
-
-.cta-home2 {
-  padding-right: 1.5rem;
-}
-
-.cta-home3 {
-  color: #fedf16e0;
-}
-
-.sub-title {
-  display: flex;
-}
 
 .cta-home1,
 .cta-home2,
 .cta-home3 {
-  display: block;
-  font-family: "NewEleganceCondltaFont";
-  font-size: calc(5rem + 1vw);
-  letter-spacing: 1rem;
+  font-size: calc(6rem + 1vw);
+}
+
+.cta-button a {
+  font-size: calc(1rem + 1vw);
 }
 
 /* about sections ---------------------------------------------  */
 
 #about {
-  min-height: 60vh;
+  min-height: 40vh;
 }
 
 .quotes1 p,
@@ -156,16 +123,16 @@ nav {
 }
 
 .kategori-container {
-  padding: 0 0 0 0;
+  padding: 5rem 0 0 0;
 }
 
 .cta1-title1,
 .cta2-title2 {
-  font-size: calc(3.5rem + 1vw);
+  font-size: calc(5rem + 1vw);
 }
 
 .sub-title1 {
-  font-size: calc(0.5rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 .galery-kategori {
@@ -180,16 +147,14 @@ nav {
 
 /* penutup sections ---------------------------------------------  */
 
+.penutup-container {
+  padding: 30% 0;
+}
+
 .title-penutup h2 {
-  font-size: calc(8rem + 0.5vw);
+  font-size: calc(10rem + 0.5vw);
 }
 
 .sub-penutup {
-  font-size: calc(1.1rem + 0.5vw);
-}
-
-.youtube,
-.instagram {
-  width: 50%;
-  height: 15%;
+  font-size: calc(0.9rem + 1vw);
 }

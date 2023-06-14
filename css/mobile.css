@@ -23,70 +23,40 @@
 
 /* navbar ------------------------------------------------------------------- */
 
-nav {
-  padding-left: 12%;
-}
-
-.logo {
-  width: 35%;
-}
-
-.logo img {
-  transform: scale(200%);
-}
-
 /* burger menu */
 
 .burger {
   transform: scale(100%);
 }
 
-.menu-navbar li {
-  padding: 2.5rem 7rem 2.5rem 4.5rem;
-}
-
 .menu-navbar li a {
-  font-size: calc(1rem + 0.5vw);
-}
-
-.navbar-open {
-  transform: translate(-90%);
+  font-size: calc(3rem + 1vw);
 }
 
 /* home sections ---------------------------------------------  */
 
-.home-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: calc(6rem + 1vw);
-  padding: 5% 50%;
-  letter-spacing: 0.4rem;
-  background: rgba(30, 24, 24, 0.1);
-  backdrop-filter: blur(0.1rem);
-  border-radius: 850px;
-}
-
-.cta-home2 {
-  padding-right: 1.5rem;
-}
-
 .cta-home1,
 .cta-home2,
 .cta-home3 {
-  font-size: calc(2.5rem + 1vw);
+  font-size: calc(3rem + 1vw);
 }
 
 .sub-title {
   flex-direction: column;
 }
 
+.cta-button {
+  margin-top: 10%;
+}
+
+.cta-button a {
+  font-size: calc(0.8rem + 1vw);
+}
+
 /* about sections ---------------------------------------------  */
 
 #about {
-  min-height: 40vh;
+  min-height: 35vh;
 }
 
 .quotes1 p,
@@ -105,17 +75,9 @@ nav {
 
 /* kategori sections ---------------------------------------------  */
 
-#kategori {
-  min-height: 80vh;
-}
-
-.kategori-container {
-  padding: 5% 0 0 0;
-}
-
 .cta1-title1,
 .cta2-title2 {
-  font-size: calc(3rem + 1vw);
+  font-size: calc(2rem + 1vw);
 }
 
 .sub-title1 {
@@ -136,22 +98,13 @@ nav {
 /* penutup sections ---------------------------------------------  */
 
 .penutup-container {
-  padding: 15% 0;
+  padding: 40% 0;
 }
 
 .title-penutup h2 {
-  font-size: calc(3.5rem + 0.5vw);
+  font-size: calc(4rem + 0.5vw);
 }
 
 .sub-penutup {
-  font-size: calc(0.6rem + 0.5vw);
-}
-
-.social-media {
-  width: 70vw;
-}
-
-.youtube,
-.instagram {
-  height: 15%;
+  font-size: calc(0.5rem + 1vw);
 }
